@@ -6,7 +6,7 @@ function Resister() {
     const name=e.target.uname.value;
     const email=e.target.email.value;
     const password=e.target.password.value;
-     const response=await fetch("http://localhost:3002/user/register",{
+     const response=await fetch("https://login-singup-mongodb-backend.onrender.com/user/register",{
          method:"POST",
          body:JSON.stringify({name,email,password}),
          headers:{'content-type':'application/json'}

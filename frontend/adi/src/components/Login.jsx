@@ -6,7 +6,7 @@ function Login() {
     
     const email=e.target.email.value;
     const password=e.target.password.value;
-     const response=await fetch("http://localhost:3002/user/login",{
+     const response=await fetch("https://login-singup-mongodb-backend.onrender.com/user/login",{
          method:"POST",
          body:JSON.stringify({email,password}),
          headers:{'content-type':'application/json'}
